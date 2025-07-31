@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Married - Audio</title>
+  <style>
+    body {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      perspective: 1000px;
+    }
+    .rotating-logo {
+      animation: spinY 10s linear infinite;
+      transform-style: preserve-3d;
+      width: 50vw;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    @keyframes spinY {
+      0%   { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+    audio::-webkit-media-controls-play-button {
+      background-color: #991b1b;
+      border-radius: 50%;
+    }
+    audio {
+      width: 80vw;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <img src="jast married.png" alt="Just Married" class="rotating-logo">
+  <audio controls>
+    <source src="this-i-promise-you-ronan-keating.mp3" type="audio/mpeg">
+    Il tuo browser non supporta l'elemento audio.
+  </audio>
+</body>
+</html>
