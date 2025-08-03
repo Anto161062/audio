@@ -14,6 +14,7 @@
       height: 100vh;
       margin: 0;
       perspective: 1000px;
+      font-family: sans-serif;
     }
 
     .rotating-logo {
@@ -38,23 +39,23 @@
       width: 80vw;
       max-width: 300px;
     }
+
+    .play-label {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #991b1b;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <img src="jast married.png" alt="Just Married" class="rotating-logo">
-  <audio controls autoplay>
+  
+  <audio controls>
     <source src="this-i-promise-you-ronan-keating.mp3" type="audio/mpeg">
     Il tuo browser non supporta l'elemento audio.
   </audio>
 
-  <script>
-    // Tentativo di autoplay via JS (alcuni browser lo bloccano comunque)
-    window.addEventListener('DOMContentLoaded', () => {
-      const audio = document.querySelector('audio');
-      audio.play().catch(e => {
-        console.log("Autoplay bloccato dal browser");
-      });
-    });
-  </script>
+  <div class="play-label">Tap Play</div>
 </body>
 </html>
